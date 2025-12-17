@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import ReadingRoom from './pages/ReadingRoom';
+import ReadingResult from './pages/ReadingResult'; // <--- Import the new page
 import Contact from './pages/Contact';
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/reading" element={<ReadingRoom />} />
+          <Route path="/result" element={<ReadingResult />} /> {/* <--- Add the route */}
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
